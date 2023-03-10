@@ -1,0 +1,45 @@
+1. How do I create a hidden file or folder? 
+mkdir .hiddenDirectory
+touch .hiddenFile
+---------------
+How do I display it in the CLI?
+`ls -a` 
+---------------
+How do I delete a hidden directory or file?
+rm -rf ~/.hiddenFolder
+rm -f ~/.hiddenFile
+
+---------------------------------------------------------------------------
+
+2. How do I create multiple nested directories, 
+like /c/Users/myusername/these/folders/are/just/for/fun?
+---------------
+Using the mkdir command with the `-p` option 
+to create all directories in the specified path 
+if they don't already exist:
+
+mkdir -p /c/Users/myusername/these/folders/are/just/for/fun
+
+---------------------------------------------------------------------------
+first message
+second message
+-
+Using the echo command with redirection:
+
+echo First string > file.txt
+echo Second string >> file.txt
+-
+The `>` symbol overwrites the file with the first string, 
+and the `>>` symbol appends the second string to the end of the file.
+
+
+
+---------------
+Using a text editor like Vim or Nano:
+
+`nano file.txt`
+---------------
+This will open the Nano text editor in the terminal, where you can manually enter the two strings 
+and save the file. In Nano, you can save the file with the key combination Ctrl + O, and exit with 
+Ctrl + X. In Vim, you can enter insert mode with the i key, enter the text, and save and exit with 
+the command :wq.
